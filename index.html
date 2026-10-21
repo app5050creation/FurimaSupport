@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>フリマサポート｜フリマの出品・取引・発送を手伝うChrome拡張</title>
+<meta name="description" content="メルカリ・ラクマ・Yahoo!フリマ・ヤフオクの出品、取引、発送の手間を減らすChrome拡張機能。">
+<style>
+:root{--kraft:#D99A44;--tape:#F3DFB4;--action:#FF5722;--slate:#607D8B;--ink:#263238;--ground:#F5F5F5}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.85 "Hiragino Sans","Yu Gothic UI","Noto Sans JP","Meiryo",sans-serif;color:var(--ink);background:var(--ground)}
+a{color:#0b57d0}
+:focus-visible{outline:3px solid var(--action);outline-offset:3px}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:6px solid var(--kraft)}
+header .wrap{padding-top:44px;padding-bottom:40px}
+h1{margin:0 0 10px;font-size:clamp(30px,6vw,46px);line-height:1.2;font-weight:800;letter-spacing:-.02em}
+.lead{margin:0;font-size:17px;max-width:32em}
+section{padding:40px 0 4px}
+h2{margin:0 0 10px;font-size:22px}
+h3{margin:18px 0 4px;font-size:16px}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:1.3em}
+.note{background:#fff;border-left:5px solid var(--kraft);padding:14px 18px;border-radius:0 6px 6px 0}
+footer{padding:44px 0 56px;color:var(--slate);font-size:13px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>フリマサポート</h1>
+  <p class="lead">メルカリ・ラクマ・Yahoo!フリマ・ヤフオクでの出品、取引、発送の手間を、ブラウザの中でまとめて減らすChrome拡張機能です。</p>
+</div></header>
+
+<main class="wrap">
+  <section>
+    <h2>できること</h2>
+    <ul>
+      <li>コピー出品・画像ダウンロード：4サイトのあいだで商品情報と画像を移して出品できます。</li>
+      <li>取引情報の一覧と利益計算：取引中の商品を一覧にし、手数料・送料・資材代から手元に残る金額を計算します。</li>
+      <li>同時出品の自動処理：ある商品が売れたとき、他サイトに出している同じ商品を削除・停止します。</li>
+      <li>検索ボタン、ハッシュタグ・定型文の入力など、出品作業のショートカット。</li>
+    </ul>
+  </section>
+
+  <section id="gmail">
+    <h2>Gmail連携について（任意機能）</h2>
+    <p>Gmail連携は、利用者が設定画面で「Gmail連携」を押して許可したときだけ有効になります。初期状態はOFFです。</p>
+    <h3>読み取り（gmail.readonly）</h3>
+    <p>フリマ各サイトから届く「商品が購入されました」などの購入通知メールだけを検索して読み取ります。売れた商品を見つけ、他サイトの同じ商品の自動処理や、取引情報の更新のきっかけにするためです。</p>
+    <h3>送信（gmail.send）</h3>
+    <p>利用者が「完了をGmailで通知する」をONにしたときだけ、許可を求めます。自動処理が終わったことを、利用者自身のGmailアドレス宛にお知らせするメールを送ります。他の宛先には送りません。</p>
+    <div class="note">
+      <p>取得したGoogleユーザーデータは、利用者のブラウザ内にのみ保存します。運営者のサーバーへ送信することはなく、第三者への提供、広告への利用、販売は一切行いません。</p>
+      <p style="margin:0">フリマサポートによるGoogle APIから受け取った情報の使用および他のアプリへの転送は、Google APIサービスのユーザーデータに関するポリシー（Limited Use要件を含む）に従います。<br>
+      <span lang="en">The use and transfer to any other app of information received from Google APIs by フリマサポート (Furima Support) will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>, including the Limited Use requirements.</span></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>プライバシーポリシー</h2>
+    <p>取得する情報、利用目的、保存場所、削除方法は、<a href="privacy.html">プライバシーポリシー</a>に記載しています。</p>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <p>運営者：app5050creation<br>連絡先：app5050creation@gmail.com</p>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  フリマサポートは、メルカリ、ラクマ、Yahoo!フリマ、ヤフオク、Google、日本郵便、ヤマト運輸とは関係のない個人（団体）が提供する拡張機能です。各名称は、それぞれの権利者の商標または登録商標です。
+</div></footer>
+</body>
+</html>
